@@ -31,9 +31,9 @@ public class SeleniumPractice {
         }
         catch (Exception e){}
         System.out.println(GarryWhite.isSelected());
-        driver.findElement(By.xpath("//button[normalize-space()='Checkout here']")).click();
-        Select cars=(Select)driver.findElement(By.xpath("//select[@id='cars']"));
-        cars.selectByVisibleText("Audi");
+//        driver.findElement(By.xpath("//button[normalize-space()='Checkout here']")).click();
+//        Select cars=(Select)driver.findElement(By.xpath("//select[@id='cars']"));
+//        cars.selectByVisibleText("Audi");
         driver.findElement(By.xpath("//input[@name='the_date']")).sendKeys("08312023");
     }
 }

@@ -24,8 +24,13 @@ public class KeybordAction {
         try
         {
             Thread.sleep(5000);
-        }catch (Exception e){}
+        }
+        catch (Exception e){}
         driver.findElement(By.xpath("//textarea[@id='demobox']"))
                 .sendKeys(Keys.BACK_SPACE);
+        driver.findElement(By.xpath("//textarea[@id='demobox']"))
+                .sendKeys(Keys.chord(Keys.CONTROL,"a"));
+        driver.findElement(By.xpath("//textarea[@id='demobox']"))
+                .sendKeys(Keys.DELETE);
     }
 }
